@@ -1,21 +1,68 @@
 .license_table
-	max-width 400px
+	max-width 240px
 
 	.license_header
-		background-color rgba(221, 233, 253, 1.000)
+		font-size 9pt
+		line-height 11pt
+		background-color rgba(215, 211, 211, 1.000)
 		.license_header_up
-			.license_spoiler
-				overflow hidden
-				.license_spoiler_sign
-					float left
-					color red
-				.license_key
-					float left
-				.license_count
-					float right
+			overflow hidden
+			background-color rgba(221, 233, 253, 1.000)
+			padding-top 5px
+			padding-bottom 5px
+			.license_spoiler_sign
+				float left
+			.license_count
+				float right
+				font-weight bold
+		.license_key
+			font-weight bold
+			padding-top 5px
+			padding-bottom 5px
+		// .license_flags
+		// 	.flag_item
 		.license_header_down
 			overflow hidden
-			.product_name
-				float left
+			padding-top 5px
+			padding-bottom 5px
 			.order_id
+				float left
+			.license_type
+				float right
+				font-weight bold
+
+	.license_content
+		display none
+		background-color rgba(215, 211, 211, 1.000)
+		.license_type
+			overflow hidden
+			.license_type_text
+				float left
+			.license_type_buttons
+				float right
+				.add_7_days_button
+					color blue
+				.revoke_button
+					color red
+				.cancel_button
+					color yellow
+
+
+	.license_details
+		display none
+		.activation_header
+			background-color rgba(244, 212, 201, 1.000)
+			overflow hidden
+			.device_name
+				float left
+			.activation_date
+				float right
+
+		.hardware_info
+			display none
+			background-color rgba(255, 233, 225, 1.000)
+			overflow hidden
+			.hardware_info_data
+				float left
+			.deactivate_button
 				float right
