@@ -1,3 +1,28 @@
-.license_header {
+.license_table {
+  max-width: 400px;
+}
+.license_table .license_header {
   background-color: #dde9fd;
+}
+.license_table .license_header .license_header_up .license_spoiler {
+  overflow: hidden;
+}
+.license_table .license_header .license_header_up .license_spoiler .license_spoiler_sign {
+  float: left;
+  color: #f00;
+}
+.license_table .license_header .license_header_up .license_spoiler .license_key {
+  float: left;
+}
+.license_table .license_header .license_header_up .license_spoiler .license_count {
+  float: right;
+}
+.license_table .license_header .license_header_down {
+  overflow: hidden;
+}
+.license_table .license_header .license_header_down .product_name {
+  float: left;
+}
+.license_table .license_header .license_header_down .order_id {
+  float: right;
 }
