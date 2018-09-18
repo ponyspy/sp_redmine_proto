@@ -6,25 +6,11 @@
 .license_table .license_header {
   background-color: #d7d3d3;
 }
-.license_table .license_header .license_header_up {
-  overflow: hidden;
-  background-color: #dde9fd;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.license_table .license_header .license_header_up .license_spoiler_sign {
-  float: left;
-}
-.license_table .license_header .license_header_up .order_id {
-  float: left;
-  margin-left: 10px;
-}
-.license_table .license_header .license_header_up .license_count {
-  float: right;
-  font-weight: bold;
-}
 .license_table .license_header .license_key {
   font-weight: bold;
+  padding-top: 5px;
+}
+.license_table .license_header .order_id {
   padding-top: 5px;
   padding-bottom: 5px;
 }
