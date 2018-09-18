@@ -19,23 +19,23 @@
   padding-top: 5px;
   color: #808080;
 }
-.license_table .license_header .license_header_down {
+.license_table .license_header .license_content {
   overflow: hidden;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.license_table .license_header .license_header_down .license_type {
+.license_table .license_header .license_content .license_type {
   font-weight: bold;
   float: left;
 }
-.license_table .license_header .license_header_down .license_buttons {
+.license_table .license_header .license_content .license_buttons {
   float: right;
 }
-.license_table .license_header .license_header_down .license_buttons .button {
+.license_table .license_header .license_content .license_buttons .button {
   float: left;
   margin-left: 5px;
 }
-.license_table .license_header .license_header_down .license_buttons .button a {
+.license_table .license_header .license_content .license_buttons .button a {
   color: #00f;
 }
 .license_table .license_activates {
