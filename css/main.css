@@ -1,9 +1,9 @@
 .license_table {
   max-width: 240px;
-}
-.license_table .license_header {
   font-size: 9pt;
   line-height: 11pt;
+}
+.license_table .license_header {
   background-color: #d7d3d3;
 }
 .license_table .license_header .license_header_up {
@@ -14,6 +14,10 @@
 }
 .license_table .license_header .license_header_up .license_spoiler_sign {
   float: left;
+}
+.license_table .license_header .license_header_up .order_id {
+  float: left;
+  margin-left: 10px;
 }
 .license_table .license_header .license_header_up .license_count {
   float: right;
@@ -29,56 +33,36 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.license_table .license_header .license_header_down .order_id {
+.license_table .license_header .license_header_down .license_type {
+  font-weight: bold;
   float: left;
 }
-.license_table .license_header .license_header_down .license_type {
+.license_table .license_header .license_header_down .license_buttons {
+  float: right;
+}
+.license_table .license_header .license_header_down .license_buttons .button {
+  float: left;
+  margin-left: 5px;
+}
+.license_table .license_activates .activate_item .activate_header {
+  background-color: #f4d4c9;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.license_table .license_activates .activate_item .activate_header .device_name {
+  float: left;
+}
+.license_table .license_activates .activate_item .activate_header .activation_date {
   float: right;
   font-weight: bold;
 }
-.license_table .license_content {
-  display: none;
-  background-color: #d7d3d3;
-}
-.license_table .license_content .license_type {
-  overflow: hidden;
-}
-.license_table .license_content .license_type .license_type_text {
-  float: left;
-}
-.license_table .license_content .license_type .license_type_buttons {
-  float: right;
-}
-.license_table .license_content .license_type .license_type_buttons .add_7_days_button {
-  color: #00f;
-}
-.license_table .license_content .license_type .license_type_buttons .revoke_button {
-  color: #f00;
-}
-.license_table .license_content .license_type .license_type_buttons .cancel_button {
-  color: #ff0;
-}
-.license_table .license_details {
-  display: none;
-}
-.license_table .license_details .activation_header {
-  background-color: #f4d4c9;
-  overflow: hidden;
-}
-.license_table .license_details .activation_header .device_name {
-  float: left;
-}
-.license_table .license_details .activation_header .activation_date {
-  float: right;
-}
-.license_table .license_details .hardware_info {
-  display: none;
+.license_table .license_activates .activate_item .activate_content {
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: #ffe9e1;
-  overflow: hidden;
 }
-.license_table .license_details .hardware_info .hardware_info_data {
-  float: left;
-}
-.license_table .license_details .hardware_info .deactivate_button {
-  float: right;
+.license_table .license_activates .activate_item .button.deactivate {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
