@@ -8,53 +8,40 @@ html
 		script(type='text/javascript', src='js/libs/jquery-3.3.1.min.js')
 		script(type='text/javascript', src='js/main.js')
 	body
-		.license_table
-			.license_header
-				.license_key Y8EG-829A-S7VQ-2Y9H-SPBM-25AT-RSTA
-				.order_id Order #0000000000
-				.product_name Cinema Grade Pro, Grain, Ascend
-				.license_header_down
+		each license in new Array(3)
+			.license_table
+				.license_header
+					.license_key Y8EG-829A-S7VQ-2Y9H-SPBM-25AT-RSTA
+					.order_id Order #0000000000
+					.product_name Cinema Grade Pro, Grain, Ascend
+					.license_header_down
 
-					//- .license_type Permanent
-					//- .license_buttons
-					//- 	.revoke.button: a(href='#') Revoke
+						//- .license_type Permanent
+						//- .license_buttons
+						//- 	.revoke.button: a(href='#') Revoke
 
-					.license_type Subscription ends: 2018-09-13
-					.license_buttons
-						.button.add_7: a(href='#') +7 days
-						.button.cancel: a(href='#') Cancel
+						.license_type Subscription ends: 2018-09-13
+						.license_buttons
+							.button.add_7: a(href='#') +7 days
+							.button.cancel: a(href='#') Cancel
 
-			.license_activates
-				.button.activates: a(href='#') Activates
-				.license_count 2 / 2
+				.license_activates
+					.activates_title Activates
+					.activates_count 2 / 2
 
-			.license_activates_content
-				.activate_item
-					.activate_header
-						.device_name Macmini7,1 x86_64
-						.activation_date 2018-09-13
-					.activate_content
-						.device_info
-							div Cinema Grade git.2433.7557f3e6 (develop)
-							div Macmini7,1 x86_64
-							div Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz x 4
-							div 8.0 GB
-							div macOS 10.14.0
-							div Intel Iris
-							div vkorepanovs Mac mini
-						.button.deactivate: a(href='#') Deactivate
-
-				.activate_item
-					.activate_header
-						.device_name Macmini7,1 x86_64
-						.activation_date 2018-09-13
-					.activate_content
-						.device_info
-							div Cinema Grade git.2433.7557f3e6 (develop)
-							div Macmini7,1 x86_64
-							div Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz x 4
-							div 8.0 GB
-							div macOS 10.14.0
-							div Intel Iris
-							div vkorepanovs Mac mini
-						.button.deactivate: a(href='#') Deactivate
+				.license_activates_content
+					each act in new Array(0)
+						.activate_item
+							.activate_header
+								.device_name Macmini7,1 x86_64
+								.activation_date 2018-09-13
+							.activate_content
+								.device_info
+									div Cinema Grade git.2433.7557f3e6 (develop)
+									div Macmini7,1 x86_64
+									div Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz x 4
+									div 8.0 GB
+									div macOS 10.14.0
+									div Intel Iris
+									div vkorepanovs Mac mini
+								.button.deactivate: a(href='#') Deactivate
