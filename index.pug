@@ -19,7 +19,7 @@ html
 						if license == 'permanent'
 							.license_type Permanent
 							.license_buttons
-								.revoke.button: a(href='#') Revoke
+								.button.revoke: a(href='#') Revoke
 
 						if license == 'subscription'
 							.license_type Subscription ends: 2018-09-13
@@ -29,13 +29,13 @@ html
 
 				.license_activates
 					.activates_title Activates
-					.activates_count= i == 2 ? '0 / 2' : '2 / 2'
+					.activates_count= i + ' / ' + 2
 
 				.license_activates_content
-					if i == 2
+					if i == 0
 						.not_activate Not Activate
 					else
-						each act in new Array(2)
+						each act in new Array(i)
 							.activate_item
 								.activate_header
 									.device_name Macmini7,1 x86_64
