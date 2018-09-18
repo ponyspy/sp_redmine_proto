@@ -5,7 +5,7 @@
   margin-bottom: 20px;
 }
 .license_table .license_header {
-  background-color: #d7d3d3;
+  background-color: #dde9fd;
 }
 .license_table .license_header .license_key {
   font-weight: bold;
@@ -31,11 +31,14 @@
   float: left;
   margin-left: 5px;
 }
+.license_table .license_header .license_header_down .license_buttons .button a {
+  color: #00f;
+}
 .license_table .license_activates {
   overflow: hidden;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #dde9fd;
+  background-color: #d7d3d3;
   cursor: pointer;
 }
 .license_table .license_activates:hover {
@@ -47,6 +50,12 @@
 .license_table .license_activates .activates_count {
   font-weight: bold;
   float: right;
+}
+.license_table .license_activates_content {
+  display: none;
+}
+.license_table .license_activates_content.show {
+  display: block;
 }
 .license_table .license_activates_content .activate_item .activate_header {
   background-color: #f4d4c9;
@@ -69,4 +78,7 @@
 .license_table .license_activates_content .activate_item .button.deactivate {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.license_table .license_activates_content .activate_item .button.deactivate a {
+  color: #00f;
 }

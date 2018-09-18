@@ -3,9 +3,8 @@
 	font-size 9pt
 	line-height 11pt
 	margin-bottom 20px
-
 	.license_header
-		background-color rgba(215, 211, 211, 1.000)
+		background-color rgba(221, 233, 253, 1.000)
 		.license_key
 			font-weight bold
 			padding-top 5px
@@ -24,12 +23,14 @@
 				.button
 					float left
 					margin-left 5px
+					a
+						color blue
 
 	.license_activates
 		overflow hidden
 		padding-top 5px
 		padding-bottom 5px
-		background-color rgba(221, 233, 253, 1.000)
+		background-color rgba(215, 211, 211, 1.000)
 		cursor pointer
 		&:hover
 			background-color rgba(244, 212, 201, 1.000)
@@ -40,6 +41,9 @@
 			float right
 
 	.license_activates_content
+		display none
+		&.show
+			display block
 		.activate_item
 			.activate_header
 				background-color rgba(244, 212, 201, 1.000)
@@ -55,7 +59,8 @@
 				padding-top 5px
 				padding-bottom 5px
 				background-color rgba(255, 233, 225, 1.000)
-			// .device_info
 			.button.deactivate
 				padding-top 5px
 				padding-bottom 5px
+				a
+					color blue
