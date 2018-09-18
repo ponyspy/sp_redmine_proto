@@ -1,11 +1,13 @@
 .license_table {
-  max-width: 240px;
+  max-width: 250px;
   font-size: 9pt;
   line-height: 11pt;
   margin-bottom: 20px;
 }
 .license_table .license_header {
   background-color: #dde9fd;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .license_table .license_header .license_key {
   font-weight: bold;
@@ -42,6 +44,8 @@
   overflow: hidden;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #d7d3d3;
   cursor: pointer;
 }
@@ -74,6 +78,8 @@
   overflow: hidden;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .license_table .license_activates_content .activate_item .activate_header .device_name {
   float: left;
@@ -85,6 +91,8 @@
 .license_table .license_activates_content .activate_item .activate_content {
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #ffe9e1;
 }
 .license_table .license_activates_content .activate_item .button.deactivate {
