@@ -5,16 +5,17 @@
 	margin-bottom 20px
 	.license_header
 		background-color rgba(221, 233, 253, 1.000)
-		padding-top 5px
-		padding-bottom 10px
 		.license_key
 			font-weight bold
-		.order_id
+			// background-color rgba(255, 233, 225, 1.000)
 			padding-top 5px
+			padding-bottom 5px
+		.order_id
 			padding-bottom 5px
 		.license_header_down
 			overflow hidden
 			padding-top 10px
+			padding-bottom 10px
 			.license_type
 				font-weight bold
 				float left
@@ -36,13 +37,19 @@
 			background-color rgba(244, 212, 201, 1.000)
 		.activates_title
 			float left
+			&:before
+				content '+'
+				width 12px
+				display inline-block
+			&.open:before
+				content '--'
 		.activates_count
 			font-weight bold
 			float right
 
 	.license_activates_content
 		display none
-		&.show
+		&.open
 			display block
 		.activate_item
 			.activate_header

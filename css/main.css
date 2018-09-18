@@ -6,19 +6,19 @@
 }
 .license_table .license_header {
   background-color: #dde9fd;
-  padding-top: 5px;
-  padding-bottom: 10px;
 }
 .license_table .license_header .license_key {
   font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .license_table .license_header .order_id {
-  padding-top: 5px;
   padding-bottom: 5px;
 }
 .license_table .license_header .license_header_down {
   overflow: hidden;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .license_table .license_header .license_header_down .license_type {
   font-weight: bold;
@@ -47,6 +47,14 @@
 .license_table .license_activates .activates_title {
   float: left;
 }
+.license_table .license_activates .activates_title:before {
+  content: '+';
+  width: 12px;
+  display: inline-block;
+}
+.license_table .license_activates .activates_title.open:before {
+  content: '--';
+}
 .license_table .license_activates .activates_count {
   font-weight: bold;
   float: right;
@@ -54,7 +62,7 @@
 .license_table .license_activates_content {
   display: none;
 }
-.license_table .license_activates_content.show {
+.license_table .license_activates_content.open {
   display: block;
 }
 .license_table .license_activates_content .activate_item .activate_header {
