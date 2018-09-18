@@ -10,10 +10,14 @@
 .license_table .license_header .license_key {
   font-weight: bold;
   padding-top: 5px;
-  padding-bottom: 5px;
 }
 .license_table .license_header .order_id {
-  padding-bottom: 5px;
+  padding-top: 5px;
+  color: #808080;
+}
+.license_table .license_header .product_name {
+  padding-top: 5px;
+  color: #808080;
 }
 .license_table .license_header .license_header_down {
   overflow: hidden;
