@@ -8,7 +8,7 @@ html
 		script(type='text/javascript', src='js/jquery-3.3.1.min.js')
 		script(type='text/javascript', src='js/main.js')
 	body
-		each license in new Array(3)
+		each license in ['subscription', 'permanent', 'permanent']
 			.license_table
 				.license_header
 					.license_key Y8EG-829A-S7VQ-2Y9H-SPBM-25AT-RSTA
@@ -16,14 +16,16 @@ html
 					.product_name Cinema Grade Pro, Grain, Ascend
 					.license_content
 
-						//- .license_type Permanent
-						//- .license_buttons
-						//- 	.revoke.button: a(href='#') Revoke
+						if license == 'permanent'
+							.license_type Permanent
+							.license_buttons
+								.revoke.button: a(href='#') Revoke
 
-						.license_type Subscription ends: 2018-09-13
-						.license_buttons
-							.button.add_7: a(href='#') +7 days
-							.button.cancel: a(href='#') Cancel
+						if license == 'subscription'
+							.license_type Subscription ends: 2018-09-13
+							.license_buttons
+								.button.add_7: a(href='#') +7 days
+								.button.cancel: a(href='#') Cancel
 
 				.license_activates
 					.activates_title Activates
