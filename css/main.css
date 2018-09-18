@@ -6,10 +6,11 @@
 }
 .license_table .license_header {
   background-color: #dde9fd;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .license_table .license_header .license_key {
   font-weight: bold;
-  padding-top: 5px;
 }
 .license_table .license_header .order_id {
   padding-top: 5px;
@@ -17,8 +18,7 @@
 }
 .license_table .license_header .license_header_down {
   overflow: hidden;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
 }
 .license_table .license_header .license_header_down .license_type {
   font-weight: bold;
