@@ -44,25 +44,36 @@
   float: left;
   margin-left: 5px;
 }
-.license_table .license_activates .activate_item .activate_header {
+.license_table .license_activates {
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.license_table .license_activates .button.activates {
+  float: left;
+}
+.license_table .license_activates .license_count {
+  float: right;
+}
+.license_table .license_activates_content .activate_item .activate_header {
   background-color: #f4d4c9;
   overflow: hidden;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.license_table .license_activates .activate_item .activate_header .device_name {
+.license_table .license_activates_content .activate_item .activate_header .device_name {
   float: left;
 }
-.license_table .license_activates .activate_item .activate_header .activation_date {
+.license_table .license_activates_content .activate_item .activate_header .activation_date {
   float: right;
   font-weight: bold;
 }
-.license_table .license_activates .activate_item .activate_content {
+.license_table .license_activates_content .activate_item .activate_content {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #ffe9e1;
 }
-.license_table .license_activates .activate_item .button.deactivate {
+.license_table .license_activates_content .activate_item .button.deactivate {
   padding-top: 5px;
   padding-bottom: 5px;
 }
