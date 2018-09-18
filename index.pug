@@ -8,7 +8,7 @@ html
 		script(type='text/javascript', src='js/jquery-3.3.1.min.js')
 		script(type='text/javascript', src='js/main.js')
 	body
-		each license in ['subscription', 'permanent', 'permanent']
+		each license, i in ['subscription', 'permanent', 'permanent']
 			.license_table
 				.license_header
 					.license_key Y8EG-829A-S7VQ-2Y9H-SPBM-25AT-RSTA
@@ -32,18 +32,21 @@ html
 					.activates_count 2 / 2
 
 				.license_activates_content
-					each act in new Array(2)
-						.activate_item
-							.activate_header
-								.device_name Macmini7,1 x86_64
-								.activation_date 2018-09-13
-							.activate_content
-								.device_info
-									div Cinema Grade git.2433.7557f3e6 (develop)
-									div Macmini7,1 x86_64
-									div Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz x 4
-									div 8.0 GB
-									div macOS 10.14.0
-									div Intel Iris
-									div vkorepanovs Mac mini
-								.button.deactivate: a(href='#') Deactivate
+					if i == 2
+						.not_activate Not Activate
+					else
+						each act in new Array(2)
+							.activate_item
+								.activate_header
+									.device_name Macmini7,1 x86_64
+									.activation_date 2018-09-13
+								.activate_content
+									.device_info
+										div Cinema Grade git.2433.7557f3e6 (develop)
+										div Macmini7,1 x86_64
+										div Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz x 4
+										div 8.0 GB
+										div macOS 10.14.0
+										div Intel Iris
+										div vkorepanovs Mac mini
+									.button.deactivate: a(href='#') Deactivate

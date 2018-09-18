@@ -73,6 +73,12 @@
 .license_table .license_activates_content.open {
   display: block;
 }
+.license_table .license_activates_content .not_activate {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: #ffe9e1;
+}
 .license_table .license_activates_content .activate_item .activate_header {
   background-color: #f4d4c9;
   overflow: hidden;
